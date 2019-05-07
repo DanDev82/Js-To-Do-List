@@ -1,0 +1,280 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  /* Removes the outline added by Google on input when on focus */
+  /* This is added through JavaScript */
+}
+
+body .container {
+  width: 80%;
+  max-width: 900px;
+  min-height: 100%;
+  margin: 6rem auto;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: .6rem;
+  -webkit-box-shadow: 0.5rem 0.3rem 2rem rgba(122, 122, 122, 0.4);
+          box-shadow: 0.5rem 0.3rem 2rem rgba(122, 122, 122, 0.4);
+}
+
+body input:-webkit-autofill,
+body textarea:focus,
+body input[type="text"]:focus,
+body input[type="password"]:focus,
+body input[type="datetime"]:focus,
+body input[type="datetime-local"]:focus,
+body input[type="date"]:focus,
+body input[type="month"]:focus,
+body input[type="time"]:focus,
+body input[type="week"]:focus,
+body input[type="number"]:focus,
+body input[type="email"]:focus,
+body input[type="url"]:focus,
+body input[type="search"]:focus,
+body input[type="tel"]:focus,
+body input[type="color"]:focus {
+  border-color: rgba(23, 162, 184, 0.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(23, 162, 184, 0.6);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(23, 162, 184, 0.6);
+  outline: 0 none;
+  background-color: #E6E6E6 !important;
+  -webkit-box-shadow: 0 0 0 100px #E6E6E6 inset;
+  -webkit-transition-property: background-color !important;
+}
+
+body #myForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+body #myForm #myInput {
+  padding: 1rem 2rem;
+  background-color: #e6e6e6;
+  border-radius: 5rem;
+  border: none;
+  font-size: 2.2rem;
+  color: #7a7a7a;
+}
+
+body #myForm #myInputBtn {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#02aab0), to(#00cdac));
+  background: linear-gradient(to right, #02aab0, #00cdac);
+  border: .1rem solid #02aab0;
+  color: #00cdac;
+  font-size: 1.1rem;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #myForm #myInputBtn:hover {
+  -webkit-box-shadow: 0.5rem 0.3rem 2rem rgba(122, 122, 122, 0.4);
+          box-shadow: 0.5rem 0.3rem 2rem rgba(122, 122, 122, 0.4);
+}
+
+body #myForm #myInputBtn i {
+  color: #78ffd6;
+  font-size: 2rem;
+}
+
+body li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 20px var(--light-shadow);
+          box-shadow: 0px 5px 20px var(--light-shadow);
+  padding: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  padding: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  border-width: 3px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to bottom, #02AAB0, rgba(0, 205, 172, 0.2)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#02AAB0), to(rgba(0, 205, 172, 0.2))) 1 100%;
+     border-image: linear-gradient(to bottom, #02AAB0, rgba(0, 205, 172, 0.2)) 1 100%;
+  border-right: none;
+}
+
+body li .delete-btn {
+  height: 58px;
+  width: 58px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#EB3349), to(#F45C43));
+  background: linear-gradient(to right, #EB3349, #F45C43);
+  border: 1px solid #FF416C;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body li .delete-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#FF416C), to(#FF4B2B));
+  background: linear-gradient(to right, #FF416C, #FF4B2B);
+  color: #fff;
+  -webkit-box-shadow: var(--box-shadow) var(--dark-shadow);
+          box-shadow: var(--box-shadow) var(--dark-shadow);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+/* MEDIA Queries */
+@media (max-width: 1000px) {
+  #myForm {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    min-height: 100%;
+    padding-bottom: 4rem;
+  }
+  #myForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #myForm #myInput {
+    margin-bottom: 2rem;
+  }
+  #myForm #myInputBtn {
+    height: 4rem !important;
+    border-radius: 5rem !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+  #myForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+  }
+  #myInputBtn {
+    margin: 3rem 0;
+  }
+  .delete-btn {
+    padding: 20px;
+  }
+  h1, h2 {
+    font-size: 35px;
+  }
+  li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  h1, h2, #myInput {
+    font-size: 1.6rem !important;
+  }
+  #myInput {
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 20rem !important;
+  }
+  h1, h2 {
+    font-size: 3rem;
+  }
+  #myInput {
+    font-size: 1.1rem !important;
+  }
+  li {
+    font-size: 1rem !important;
+  }
+  .delete-btn {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

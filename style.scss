@@ -1,0 +1,243 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+// Variables
+$box-shadow: .5rem .3rem 2rem;
+$light-shadow: rgba(277, 277, 277, 1);
+$dark-shadow: rgba(122, 122, 122, 0.4);
+
+// Reset Styles
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Global Styles
+h1, h2, h3 { font-weight: 400; }
+
+h1 {
+  font-size: 2.4rem;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+h1, h2 { text-align: center; }
+
+body {
+  height: 100%;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+
+  // Content Wrapper
+  .container {
+    width: 80%;
+    max-width: 900px;
+    min-height: 100%;
+    margin: 6rem auto;
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: .6rem;
+    box-shadow: $box-shadow $dark-shadow;
+  }
+
+  /* Removes the outline added by Google on input when on focus */
+  input:-webkit-autofill,
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus {
+    border-color: rgba(23,162,184, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(23,162,184, 0.6);
+    outline: 0 none;
+    background-color: #E6E6E6 !important;
+    -webkit-box-shadow: 0 0 0 100px #E6E6E6 inset;
+    -webkit-transition-property: background-color !important;
+  }
+
+  // Input and Create Button
+  #myForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+
+    #myInput {
+      padding: 1rem 2rem;
+      background-color: #e6e6e6;
+      border-radius: 5rem;
+      border: none;
+      font-size: 2.2rem;
+      color: #7a7a7a;
+    }
+    #myInputBtn {
+      height: 4rem;
+      width: 4rem;
+      margin-right: 1rem;
+      border-radius: 50%;
+      background: linear-gradient(to right, #02aab0, #00cdac);
+      border: .1rem solid #02aab0;
+      color: #00cdac;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+      box-shadow: .3rem .3rem .6rem rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        box-shadow: $box-shadow $dark-shadow;
+      }
+
+      i {
+        color: #78ffd6;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  /* This is added through JavaScript */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 20px var(--light-shadow);
+    padding: 10px;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #02AAB0, rgba(0,205,172, 0.2)) 1 100%;
+    border-right: none;
+
+    .delete-btn {
+      height: 58px;
+      width: 58px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: linear-gradient(to right, #EB3349, #F45C43);
+      border: 1px solid #FF416C;
+      color: #fff;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.2);  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: linear-gradient(to right, #FF416C, #FF4B2B);
+        color: #fff;
+        box-shadow: var(--box-shadow) var(--dark-shadow);
+        transform: rotate(15deg);
+      }
+    }
+  }
+}
+
+/* MEDIA Queries */
+@media (max-width: 1000px) {
+  #myForm {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    min-height: 100%; 
+    padding-bottom: 4rem;
+  }
+  #myForm {
+    flex-direction: column;
+  
+    #myInput {
+      margin-bottom: 2rem;
+    }
+    #myInputBtn {
+      height: 4rem !important;
+      border-radius: 5rem !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+  #myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  #myInputBtn {
+    margin: 3rem 0;
+  }
+  
+  .delete-btn {
+    padding: 20px;
+  }
+  
+  h1,h2 {
+    font-size: 35px
+  }
+  
+  li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  h1, h2, #myInput {
+    font-size: 1.6rem !important;
+  }
+  #myInput {
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 20rem !important;
+  }
+   h1,h2 {
+    font-size: 3rem
+  }
+  
+  #myInput {
+    font-size: 1.1rem !important;
+  }
+  
+  li {
+    font-size: 1rem !important;
+  }
+  .delete-btn {
+    width: 2rem;
+    height: 2rem;
+  }
+}

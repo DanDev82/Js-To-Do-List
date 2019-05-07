@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://use.fontawesome.com/e5a21c8625.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>JavaScript | TO Do List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do App</h1>
+    <form id="myForm">
+      <input type="text" id="myInput" class="animated bounceInDown" autocomplete="off" maxlength="30">
+      <button id="myInputBtn" class="animated pulse infinite slow"><i class="fa fa-plus"></i></button>
+    </form>
+    <hr>
+    <h2>Need to do</h2>
+    <ul id="myList">
+      <li class="animated fadeInLeft">Tell Your Partner you love them<button class="delete-btn" onclick="deleteItem(this)"><i class="fa fa-trash"></i></button></li>
+      <li class="animated fadeInLeft">Compliment Someone today<button class="delete-btn" onclick="deleteItem(this)"><i class="fa fa-trash"></i></button></li>
+    </ul>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
